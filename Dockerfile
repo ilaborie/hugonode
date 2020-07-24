@@ -31,7 +31,7 @@ RUN groupadd -r hugonode && useradd -r -g hugonode -G audio,video hugonode \
     && chown hugonode:hugonode /home/hugonode
 USER hugonode
 
-WORKDIR /home/hugonode
-VOLUME [ "/home/hugonode" ]
+WORKDIR /site
+VOLUME [ "/site" ]
 
 CMD hugo version
